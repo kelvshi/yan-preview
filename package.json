@@ -1,0 +1,33 @@
+{
+  "name": "yan-preview",
+  "version": "1.0.0",
+  "description": "preview preview the local resource like pictures or video",
+  "author": "kelvshi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelvshi/yan-preview.git"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "bugs": {
+    "url": "https://github.com/kelvshi/yan-preview/issues"
+  },
+  "bin": {
+    "yan": "bin/yan"
+  },
+  "homepage": "https://github.com/kelvshi/yan-preview#readme",
+  "dependencies": {
+    "@nuxtjs/axios": "^5.6.0",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "glob": "^7.1.4",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
